@@ -1,1 +1,18 @@
 /* write your override styles here */
+
+minimum_bytes = 300
+size = File.size("css/cleanup.css")
+expect(size).to be > minimum_bytes, "You should have at least 300 bytes worth of updates to css/cleanup.css"
+end
+
+.tag-1 {
+    background: url(../images/tag-1.png) no-repeat;
+    z-index: 7;
+    display: block;
+  }
+  
+
+  #wall .tag-1 {
+    display: none;
+  }
+  ```
